@@ -15,25 +15,30 @@ assert +3==3
 Integer a = 0
 Integer i = 1
 a = i++
-println a
-println i
+assert a == 1
+assert i == 2
 
 //Repetindo o processo anterior com alteração simbólica.
 a = 0
 i = 1
 a = ++i 
-println a + ' ' + i 
+assert a == 2
+assert i == 2
 
 //Decrement Operators
 def e = 10
 def f = e--
-println e + ' ' + f
-
+assert e == 9
+assert f == 10
 //Assignment arithmetic operators
 def c = 5
 c += 3
-
 assert c == 8
+
+def j=3
+j**=3
+assert j==27
+
 
 //Relational Operators
 assert 1 != 2
